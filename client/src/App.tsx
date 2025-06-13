@@ -20,7 +20,7 @@ function App() {
 
   const checkAuth = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/auth/checkAuth");
+      const res = await axios.get("https://cms-uuv8.onrender.com/api/auth/checkAuth");
       if (res.data.user) {
         setUser(res.data.user);
       }
