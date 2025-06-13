@@ -3,6 +3,8 @@ const jwt = require("jsonwebtoken");
 const checkAuth = (req, res, next) => {
   try {
     const token = req.cookies.token;
+    console.log(req.cookies);
+    console.log(token);
     if (!token) {
       return res.json({ error: " Unauthorized route. Please Login" });
     }
