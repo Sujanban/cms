@@ -35,7 +35,7 @@ const login = async (req, res) => {
       { expiresIn: "7d" }
     );
 
-    res.cookie("token", token, { httpOnly: true });
+    res.cookie("token", token, { httpOnly: true, sameSite: "None" });
 
     return res.status(200).json({
       message: "Login successful",
