@@ -11,7 +11,7 @@ const Post = () => {
   const fetchPosts = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/post/" + id);
+      const res = await axios.get("https://cms-uuv8.onrender.com/api/post/" + id);
       if (res.data.error) {
         console.log(res.data.error);
       }

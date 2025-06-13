@@ -5,7 +5,7 @@ const { checkAuth } = require("../middlewares/userAuth");
 const router = require("express").Router();
 router.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://cms-uuv8.onrender.com",
     credentials: true,
   })
 );

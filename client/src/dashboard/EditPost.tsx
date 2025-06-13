@@ -11,7 +11,7 @@ const EditPost = () => {
   const fetchPost = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/api/post/${id}`);
+      const res = await axios.get(`https://cms-uuv8.onrender.com/api/post/${id}`);
       if (res.data.error) {
         console.log(res.data.error);
       }
@@ -32,7 +32,7 @@ const EditPost = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.put(`http://localhost:5000/api/post/${id}`, Post);
+      const res = await axios.put(`https://cms-uuv8.onrender.com/api/post/${id}`, Post);
       if (res.data.error) {
         console.log(res.data.error);
       }

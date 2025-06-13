@@ -14,7 +14,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/post", formData, {
+      const res = await axios.post("https://cms-uuv8.onrender.com/api/post", formData, {
         withCredentials: true,
       });
 

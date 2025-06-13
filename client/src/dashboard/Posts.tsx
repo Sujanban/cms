@@ -11,7 +11,7 @@ const Posts = () => {
   const fetchPosts = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/posts");
+      const res = await axios.get("https://cms-uuv8.onrender.com/api/posts");
       if (res.data.error) {
         console.log(res.data.error);
       }
@@ -26,7 +26,7 @@ const Posts = () => {
   const deletePost = async (id) => {
     try {
       setLoading(true);
-      const res = await axios.delete(`http://localhost:5000/api/post/${id}`);
+      const res = await axios.delete(`https://cms-uuv8.onrender.com/api/post/${id}`);
       if (res.data.error) {
         console.log(res.data.error);
       }
@@ -40,7 +40,7 @@ const Posts = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:5000/api/auth/logout", {
+      await axios.get("https://cms-uuv8.onrender.com/api/auth/logout", {
         withCredentials: true,
       });
 
