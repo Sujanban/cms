@@ -15,10 +15,10 @@ Run server folder as
 ```
     cd server
     rename .env.example to .env
-    update the mongodb url
+    update mongodb url
     npm install
     npm start
 ```
 
 
-Watch the project demo on the video called demo
+### Watch the Demo Video for detail
